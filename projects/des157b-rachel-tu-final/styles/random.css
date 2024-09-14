@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+}
+
+#random {
+    position: absolute;
+    display: flex;
+    top: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.title h1 {
+    margin-bottom: 15px;
+}
+
+.title span {
+    z-index: 1;
+    color: #472A2A;
+}
+
+.column {
+    align-items: center;
+    justify-content: center;
+}
+
+#crane1 {
+    position: absolute;
+    left: 220px;
+    top: 50px;
+}
+
+#bubble1 {
+    position: absolute;
+    left: 470px;
+    top: 110px;
+}
+
+#crane2 {
+    position: absolute;
+    left: 900px;
+    top: 145px;
+}
+
+#bubble2 {
+    position: absolute;
+    left: 670px;
+    top: 270px;
+}
+
+#crane3 {
+    position: absolute;
+    left: 150px;
+    top: 400px;
+    z-index: 1;
+}
+
+#bubble3 {
+    position: absolute;
+    left: 430px;
+    top: 490px;
+}
+
+#clouds1 {
+    position: absolute;
+    left: 20px;
+    top: 130px;
+}
+
+#clouds2 {
+    position: absolute;
+    width: 520px;
+    height: 435px;
+    left: 690px;
+    top: 290px;
+}
+
+#random div.row {
+    position: absolute;
+    left: 580px;
+    bottom: 12px;
+}
+
+#random div.row button {
+    margin-left: 20px;
+}
+
+.bubbleItem {
+    width: 250px;
+    height: 130px;
+    background-color: white;
+    border-radius: 5px;
+    color: #472A2A;
+    text-align: center;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+.bubbleItem p {
+    padding-left: 10px;
+    padding-right: 10px;
+}

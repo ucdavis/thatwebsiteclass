@@ -1,0 +1,161 @@
+* {
+    font-family: 'Roboto';
+    letter-spacing: 0.03em;
+}
+
+body {
+    background-color: #FFFAF2;
+    margin: 0;
+}
+
+main {
+    width: 1200px;
+    height: 720px;
+    margin: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.showing {
+    display: block;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 10px;
+    background-color: transparent;
+    border-color: #472A2A;
+    border-width: 1px;
+    color: #472A2A;
+}
+
+button a {
+    line-height: 40px;
+    white-space: nowrap;
+}
+
+button:hover {
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.18);
+}
+
+button img {
+    margin-left: 8px;
+}
+
+.bottom-btns {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin: 50px auto;
+}
+
+
+/* One-word Title */
+
+.title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.title h1 {
+    font-weight: 500;
+    font-size: 50px;
+    color: #472A2A;
+}
+
+
+/* Nav */
+
+nav div {
+    margin-top: 15px;
+    list-style-type: none;
+    text-align: right;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    position: fixed;
+    top: 50px;
+    right: 60px;
+    z-index: 1;
+}
+
+nav li {
+    color: #472A2A;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    letter-spacing: 0.03em;
+    text-align: right;
+    list-style-type: none;
+    z-index: 1;
+}
+
+.menu {
+    width: 30px;
+    height: 26px;
+}
+
+.menu:hover {
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    font-weight: 500;
+}
+
+
+/* Buttons and Nav Anchor Elements */
+
+a,
+a::after {
+    color: #472A2A;
+    text-decoration: none;
+    z-index: 1;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+
+/* Page Control */
+
+.pgHidden {
+    display: none;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+}
+
+.pgShowing {
+    display: block;
+    opacity: 1;
+    transition: opacity 2s ease-in-out;
+}

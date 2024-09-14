@@ -1,0 +1,29 @@
+#tada {
+    font-family: 'Karla', sans-serif;
+    font-weight: 600;
+    font-size: 25px;
+    color: #472A2A;
+}
+
+#folding div.row {
+    justify-content: center;
+    align-items: center;
+    margin: 40px 0 50px;
+}
+
+#folding div.row button {
+    font-size: 20px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: 20px;
+    border-radius: 10px;
+}
+
+#foldingMenu:hover {
+    cursor: pointer;
+}
+
+#magicBtns {
+    opacity: 0;
+    transition: opacity 1s;
+}

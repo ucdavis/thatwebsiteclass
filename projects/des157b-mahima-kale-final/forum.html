@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Forum</title>
+    <!-- cursor -->   <script src="https://cdn.jsdelivr.net/npm/kursor@0.0.14/dist/kursor.js"></script>
+   
+    <link href="styles.css" rel="stylesheet">
+
+    <!-- cursor -->  
+    <link rel="stylesheet" href="https://unpkg.com/kursor/dist/kursor.css">
+
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/10b06dad91.js" crossorigin="anonymous"></script>
+
+    <!-- back4app: parse library -->
+    <script src="https://npmcdn.com/parse/dist/parse.min.js"></script>  
+     <script  src="scriptf.js" defer ></script>
+
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li id="home"><a href="index.html"><i class="fas fa-home"> &nbsp;</i>Home</a></li>
+            <li id="nav"><a href="index.html#timeline"><i class="fas fa-history"></i>Timeline</a></li>
+            <li id="chat"><a href="forum.html"><i class="fas fa-comments"> &nbsp;</i>Share</a></li>
+            <li id="info"><i class="fas fa-info-circle"></i> &nbsp;About</li>
+        </ul>
+    </nav>
+    <section id="overlay_info">
+      <section id="inside">
+      <button>Close</button>
+      <p>The aim of this website is to start a conversation about race and what a racist idea is. It shows a <a href="index.html#timeline">historical timeline</a> for how the construct of race is woven into the roots of the making of America.</p><br>
+      <p>The historical timeline is studied and inspired from the book <i>Stamped from the Beginning</i>, written by Ibram X.Kendi.</p><br>
+      <p>We want to here your thoughts. Submit a response of what you think about the construct of race or what you think a racists idea is <a href="forum.html">here</a></p>
+      </section>
+    </section>
+    <section id="share">
+        <h2>Share and Construct your Future!</h2>
+        <p>Add your ideas and thoughts about race or racist ideas. Do you think race is a social or political or cultural construct? Share your experience/s. </p>   
+        <div id="add"><a>Submit a Response</a></div>
+    </section>
+    
+    <section id="container">
+       
+    </section>
+    <section id="form">
+        <form id="actualform">
+            <div id="formback"><i class="fa-solid fa-arrow-left"></i></div>
+
+            <label for="story">What do you think a racist idea is?</label><br>
+            <p id="marg">You can also share your thoughts about the construct of race or respond to one of the prompts from the timeline.</p>
+
+           <section id="area">
+                <textarea id="story" maxlength="400" spellcheck="true" name="story" rows="5" cols="33"></textarea>
+                <p>Maximum 400 characters</p>
+                <input type="submit" value="Submit">
+            </section> 
+            
+
+           <section id="buttons">
+                <input type="button" value="View Responses" id="view">
+                <input type="button" value="Submit Response" id="subs">
+
+            </section>
+            
+        </form>
+    </section>
+
+    <div id="up">
+        <i class="fas fa-angle-up"></i>
+        <p>Scroll Up</p>
+    </div>
+</body>
+</html>

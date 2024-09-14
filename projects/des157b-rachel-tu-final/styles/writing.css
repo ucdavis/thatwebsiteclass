@@ -1,0 +1,88 @@
+.row {
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* #writing h1 {
+    margin-top: 15px;
+} */
+
+#writingHeart {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 540px;
+    height: 480px;
+    background-image: url("../images/heart.png");
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}
+
+#writing a:first-of-type {
+    margin-left: 7px;
+}
+
+label {
+    text-align: center;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 25px;
+    color: #472A2A;
+    letter-spacing: 0.02em;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+label:first-of-type {
+    margin-top: 82px;
+}
+
+#name {
+    width: 200px;
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 400;
+    color: #472A2A;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#text {
+    width: 300px;
+    height: 75px;
+    padding: 5px;
+    font-size: 19px;
+    font-weight: 400;
+    resize: none;
+    color: #472A2A;
+    border-radius: 5px;
+    border-width: 1px;
+}
+
+#charcount {
+    font-weight: 300;
+}
+
+input[type=submit] {
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    padding: 7px;
+    border: 1px solid #472A2A;
+    color: #472A2A;
+    background-color: #FFFAF2;
+    border-radius: 5px;
+    transition: all 0.4s;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #674645;
+    color: #FFFAF2;
+}
+
+#charcount {
+    margin-top: 10px;
+}

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Thousand Cranes</title>
+    <link rel="preconnect" href="https://fonts .googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/writing.css">
+    <link rel="stylesheet" href="../styles/folding.css">
+    <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
+    <script type="text/javascript" type="text/javascript">
+        Parse.initialize("g0DPMDEo9Phz7g6OFqKeJEfcNdpi1a1VYeCQ1esT", "yz7e7QGK8hloEPRtewFHP3jzeb4m4FO24EbdcumF"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+        Parse.serverURL = 'https://parseapi.back4app.com/'
+    </script>
+</head>
+
+<body>
+    <main class="pgShowing" id="writing">
+        <div class="title">
+            <h1>2/3 • Writing Your Wish</h1>
+        </div>
+        <div class="row">
+            <img src="../images/heartMsg.png">
+            <form id="writingHeart">
+                <label for="name">Your Name (optional):</label>
+                <input id="name"></input>
+                <label for="text">Enter your wish here (required):</label>
+                <textarea id="text" onkeyup="charcountupdate(this.value)" required></textarea>
+                <span id="charcount">0 out of Max 100 Characters</span>
+                <input type="submit" value="Make my crane">
+            </form>
+        </div>
+        <div class="bottom-btns">
+            <button>  <img src="../images/chevron-left.svg"><a href="color.html"> Back </a></button>
+        </div>
+        <nav>
+            <img src="../images/menu.png" class="menu">
+            <div class="hidden">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="color.html">MAKE A CRANE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </div>
+        </nav>
+    </main>
+
+    <main class="pgHidden" id="folding">
+        <div class="title">
+            <h1 class="titleTxt">3/3 • Folding Your Crane</h1>
+        </div>
+        <div class="row">
+            <img src="" id="target">
+        </div>
+        <div class="row" id="magicBtns">
+            <button> <a href="gallery.html">View Gallery </a> <img src="../images/eye.svg"></button>
+            <button> <a href="random.html">Unlock Secret Page</a><img src="../images/lock.png"></button>
+        </div>
+        <nav>
+            <img src="../images/menu.png" class="titleMenu" id="foldingMenu">
+            <div class="hidden">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="gallery.html">GALLERY</a></li>
+                <li><a href="color.html">MAKE A CRANE</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+            </div>
+        </nav>
+    </main>
+    <script>
+        // https://codepen.io/borisplotkin/pen/RPwXeK
+        function charcountupdate(str) {
+            var len = str.length;
+            if (len > 100) {
+                document.getElementById("charcount").innerHTML = "Over Max Limit!"
+            } else {
+                document.getElementById("charcount").innerHTML = len + ' out of 100 characters';
+            }
+        }
+
+        function validate() {
+            // check if input is bigger than 3
+            var value = document.getElementById('titleeee').value;
+            if (value.length < 3) {
+                return false; // keep form from submitting
+            }
+        }
+    </script>
+    <script src="../js/menu.js"></script>
+    <script src="../js/writing.js"></script>
+
+</body>
