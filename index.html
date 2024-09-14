@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- normalize script -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@400;700&family=Inter&display=swap" rel="stylesheet">
+
+    <!-- Flexslider Stylesheet -->
+    <link href="flexslider.css" rel="stylesheet">
+
+    <!-- style sheet -->
+    <link href="styles.css" rel="stylesheet">
+
+    <title>That Website Class</title>
+
+    <!-- jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+
+    <!-- Flexslider JS -->
+    <script src="jquery.flexslider-min.js" defer></script>
+
+    <!-- My Script -->
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <!-- <button><img src="images/hamburger.svg" alt="hamburger icon" width="40"></button> 
+        Hiding the nav for now. We can implement when we have time
+        -->
+        <!-- hamburger menu here -->
+        <h1>that website class</h1>
+    </header>
+
+    <main>
+        <!-- I am turnin off the navigation for now. If we get the hamburger menu working that is fine, but otherwise people can just scroll -Bill -->
+        <!-- <nav>
+            <ul>
+                <li><a>Home</a><span></span></li>
+                <li><a href="#projects">Projects</a><span></span></li>
+                <li><a href="#about">About</a><span></span></li>
+                <li><a href="#roadmap">Roadmap</a><span></span></li>
+                <li><a>Credits</a><span></span></li>
+                <!-- the credits will be done last.. focus on everything else for now. span has id; class of current, bg image gets loaded
+            </ul>
+        </nav> -->
+
+        <section id="projects">
+            <div id="header">
+                <div class="container">
+                    <h2>Projects</h2>
+                    <img src="images/llama-boba.svg" id="header-llama">
+                    <img src="images/eye.svg" id="header-eye">
+                    <img src="images/mail.svg" id="header-mail">
+                    <img src="images/heart.svg" id="header-heart">
+                    <img src="images/star.svg" id="header-star">
+                    <img src="images/star.svg" id="header-star2">
+                    <img src="images/star.svg" id="header-star3">
+                </div>
+            </div>
+
+            <article id="context">
+                <div>
+                    <h3>What's going on?</h3>
+                    <p>Every year, the students of 157A and 157B make portal pages linking to their works. Check &lsquo;em out! Note: These are best viewed on desktop.</p>
+                <!-- article to look like windows window..through bg image in css -->
+                </div>
+            </article>
+
+            <article class="student">
+                <header>
+                    <h3>The Crafty Cauldron | DES 157A</h3>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/crafty-cauldron.gif" alt="screenshot of crafty cauldron website">
+                    <div>
+                        <p>This cool madlibs website by Brandish Couch allows you create a potion recipe for best buddy or worst enemy.</p>
+                        <p>Project best viewed on desktop.</p>
+                        <a href="projects/des157a-brandish-couch-madlibs" class="button">View Project</a>
+                    </div>
+                </section>
+                <!-- each of these articles will be collapsible. -->
+                <!-- ask bill - should the picture of the student work be loaded in the bg? -->
+            </article>
+
+            <article class="student">
+                <header>
+                    <h3>Plant Parenthood | DES 157A</h3>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/plant-parenthood-screenshot.png" alt="Plant parenthood screenshot" alt="screenshot of crafty cauldron website">
+                    <div>
+                        <p>In Emily Wen's fun plant care game, you need to make sure that you can keep a friend's plant alive with food, water, and sunlight.</p>
+                        <a href="projects/des157a-emily-wen-finalproject" class="button">View Project</a>
+                    </div>
+                </section>
+            </article>
+
+            <article class="student">
+                <header>
+                    <h3>Keychain City | DES 157A</h3>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/keychain.png" alt="screenshot of keychain">
+                    <div>
+                        <p>Jenny Wong's interactive narrative gives us a peak into her keychain collection, featuring a rotating 3D stand.</p>
+                        <a href="projects/des157a-jenny-wong-finalproject" class="button">View Project</a>
+                    </div>
+                </section>
+            </article>
+
+            <article class="student">
+                <header>
+                    <h3>Then &amp; Now | DES 157B</h3>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/then-now.png" alt="screenshot of then and now">
+                    <div>
+                        <p>An introspective website, Anthony Chow asks you leave a message for the you of 5 years ago. </p>
+                        <a href="projects/des157b-anthony-chow-final/version3/index.html" class="button">View Project</a>
+                    </div>
+                </section>
+            </article>
+
+            <article class="student">
+                <header>
+                    <h3>Construct of Race | DES 157B</h3>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/race.gif" alt="animated gif of race project">
+                    <div>
+                        <p>Mahima Kale gives us a website that asks us to think about race, racism, and how it is tied to the history of America.</p>
+                        <a href="projects/des157b-mahima-kale-final" class="button">View Project</a>
+                    </div>
+                </section>
+            </article>
+
+            <article class="student">
+                <header>
+                    <h3>A Thousand Cranes | DES 157B</h3>
+                    <img src="images/down_arrow.svg" width="20" class="arrow">
+                </header>
+                <section class="desc">
+                    <img src="images/cranes.png" alt="screenshot of thousand cranes website">
+                    <div>
+                        <p>Rachel Tu created a website that connects Japanese history and tradition with digital interaction design.</p>
+                        <a href="projects/des157b-rachel-tu-final/" class="button">View Project</a>
+                    </div>
+                </section>
+            </article>
+
+        </section>
+
+        <section id="about">
+            <div>
+                <h1>About</h1>
+            </div>
+
+            <article id="about-window">
+                <header>
+                    <img src="images/rainbow.svg" id="rainbow">
+                </header>
+                <div>
+                    <p>Are you interested in styling and coding websites? UC Davis offers a variety of courses pertaining to the fundamentals of UI UX and interactive media.</p>
+                    <img src="images/cloud-rain.svg" id="cloud-rain">
+                </div>
+                <!-- article to look like windows window..through bg image in css -->
+            </article>
+
+            <h3>Check out what people are saying about us!</h3>
+
+            <!-- Flexslider -->
+            <div class="flexslider">
+                <ul class="slides">
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>DES117 and DES157A have been two of my favorite courses at UC Davis. I enjoy being able to learn practical skills and apply them to create products that I can call my own.</blockquote>
+                            </div>
+                        </article>
+                    </li>
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>This was a great class, I learned a lot and the assignments directly affected what we were learning and also gave me pieces to put in my portfolio and keep working on to improve.</blockquote>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>I wish there were more classes on front end coding! I learned so much and the knowledge I obtained is applicable for my desired future career.</blockquote>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>Although I came in with a little web design experience, this course taught me a lot beyond what I already knew. I truly enjoyed this class and was able to come up with some great personal project ideas. I would definitely recommend this class to anyone who wants to pursue a career in web design.</blockquote>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>I absolutely love this class! This is probably my favorite class so far! I love how this class values flexibility and creative freedom by letting us choose our topic for each project. This class made me love front-end web development more and I hope to continue on with that path. I learned tons of technical, design and soft skills that are also transferrable. </blockquote>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li>
+                        <article>
+                            <header></header>
+                            <div>
+                                <img src="images/pLlama.svg" width="100">
+                                <blockquote>I took this class as a "fun" elective, not realizing the intensity and challenge of the course. However, I don't regret it one bit because I learned so much and challenged myself to step outside my comfort zone by diving into a more advanced coding class. Overall I enjoyed this class and loved being able to find my way through challenges in this course. </blockquote>
+                            </div>
+                        </article>
+                    </li>
+                </ul>
+              </div>
+        </section>
+
+        <section id="roadmap">
+            <h4>CAN YOU HTML YOUR WAY THROUGH THESE CLASSES?</h4>
+            <img>
+            <!-- the entire roadmap image... -->
+            <img>
+            <!-- the clouds and the trans rainbow -->
+            <!-- the entire section will have the gradient background -->
+        </section>
+        <div id="bottom-illustration">
+            <img src="images/llama-moon.svg" id="llama-moon">
+            <img src="images/pink-cloud1.svg" id="pink-cloud1">
+            <img src="images/pink-cloud2.svg" id="pink-cloud2">
+        </div>
+    </main>
+
+    <footer>
+        <section id="clouds">
+            <div class="container">
+                <h2>Come Interact with Us!</h2>
+                <img src="images/bill-llama.svg" id="footer-bill-llama">
+                <img src="images/glenda-llama.svg" id="footer-glenda-llama">
+                <img src="images/eyeball.svg" id="footer-eye">
+                <img src="images/envelope-kiss.svg" id="footer-envelope">
+                <img src="images/star.svg" id="footer-star">
+            </div>
+        </section>
+        <article>
+            <div>
+                <p>All content &copy; 2023<br> 
+                Celebrating work created by students in the UC Davis Design Department, in Interaction Design 1, 2 &amp; 3 (DES 117, DES 157A &amp; DES 157B). Questions? Please contact <a href="mailto:&#103;&#097;&#100;&#114;&#101;&#119;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Glenda Drew</a> or <a href="mailto:&#119;&#109;&#109;&#101;&#097;&#100;&#064;&#117;&#099;&#100;&#097;&#118;&#105;&#115;&#046;&#101;&#100;&#117;">Bill Mead</a></p>
+                <p>Bulletin board in Cruess Hall, and this website were designed and produced by Brenda Padron, Santhoshi Ramanathan, Jenni Ramos, Emily Rangsuesbin, Callia Tang, Alex Vargas, Glenda Drew and Bill Mead.</p>
+            </div>
+        </article>
+    </footer>
+</body>
+</html>
