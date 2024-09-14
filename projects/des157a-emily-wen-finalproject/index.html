@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Parenthood</title>
+
+    <!-- Normalize -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?&family=Baskervville&display=swap" rel="stylesheet">
+
+    <!-- Styling -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Script -->
+    <script src="./script.js" defer></script>
+
+</head>
+<body>
+    <header>
+        <h1>Plant Parenthood</h1>
+        <h2>Can you keep the plant alive?</h2>
+    </header>
+    <section class="hidden" id="overlay">
+        <article id="introduction" class="showing">
+            <button class="settings-btn">
+                <img src="images/settings-btn-dark.png" alt="settings button">
+            </button>
+            <button class="close-btn">
+                <img src="images/x-btn.png" alt="close button">
+            </button>
+            <h1>Welcome to the wonderful world of parenthood!</h1>
+            <p>
+                Your best friend is going out of town and they have entrusted you to take care of their emotional-support plant. The plant is in perfect health, and your goal is to keep their plant alive and as healthy as possible when they return. 
+            </p>
+            <p>
+                Don't worry, you're only responsible for their favorite thing in the whole entire world. Good luck and no pressure!
+            </p>
+            <button class="instruction-btn">Plant Care 101</button>
+        </article>
+
+        <article id="instructions" class="hidden">
+            <button class="back-btn" id="back-to-intro">
+                <img src="images/arrow.png" alt="arrow pointing left">
+            </button>
+            <button class="settings-btn">
+                <img src="images/settings-btn-dark.png" alt="settings button">
+            </button>
+            <button class="close-btn">
+                <img src="images/x-btn.png" alt="close button">
+            </button>
+            <h1>Plant Care 101</h1>
+            <p>At the start of the game, the plant is perfectly healthy with just the right amount of water <img src="images/water1.png" alt="water">, sun <img src="images/sun1.png" alt="sun">, and nutrients <img src="images/fertilizer1.png" alt="fertilizer">.</p>
+            <p>Each day, the plant might lose a bit of each resource and you must decide whether to FEED the plant random resources or let the plant REST by giving it nothing.</p>
+            <p>Be careful! Too little or too much of a resource will hurt the plant.</p>
+            <button class="select-plant">Select Your Plant!</button>
+        </article>
+
+        <article id="plant-selection" class="hidden">
+            <button class="back-btn" id="back-to-instructions">
+                <img src="images/arrow.png" alt="arrow pointing left">
+            </button>
+            <button class="settings-btn">
+                <img src="images/settings-btn-dark.png" alt="settings button">
+            </button>
+            <button class="close-btn">
+                <img src="images/x-btn.png" alt="close button">
+            </button>
+            <h1>Select Your Plant!</h1>
+            <div class="plant-content">
+                <div class="slideshow">
+                    <button class="arrow-btn" id="prev">
+                        <img src="images/arrow.png" alt="arrow pointing left">
+                    </button>
+                    <div id="plant-select">
+                        <img src="images/plant.png" alt="plant">
+                        <img src="images/pot.png" alt="pot">
+                    </div>
+                    <button class="arrow-btn" id="next">
+                        <img src="images/arrow.png" alt="arrow pointing right">
+                    </button>
+                </div>
+                <div class="plant-select-info">
+                    <div id="plant-info">
+                        <h2>Basic Plant</h2>
+                        <p>Difficulty: Normal</p>
+                        <img class='plant-stats' src="images/plant-stats.png" alt="basic plant">
+                    </div>
+                    <div id="snake-info">
+                        <h2>Snake Plant</h2>
+                        <p>Difficulty: Easy</p>
+                        <img class='plant-stats' src="images/snake-stats.png" alt="snake plant">
+                    </div>
+                    <div id="succulent-info">
+                        <h2>Succulent Plant</h2>
+                        <p>Difficulty: Hard</p>
+                        <img class='plant-stats' src="images/succulent-stats.png" alt="succulent plant">
+                    </div>
+                </div>
+            </div>
+            <button class="start-game" id="start">Start Game!</button>
+        </article>
+
+        <article id="settingsPage" class="hidden">
+            <button class="close-btn">
+                <img src="images/x-btn.png" alt="close button">
+            </button>
+            <h1>Settings</h1>
+            <div class="sound-setting">
+                <h2>Sound</h2>
+                <div class="setting">
+                    <span class="on">On</span>
+                    <label class="switch" id="soundOn">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="off">Off</span>
+                </div>
+            </div>
+            <div class="animation-setting">
+                <h2>Animation</h2>
+                <div class="setting">
+                    <span class="on">On</span>
+                    <label class="switch" id="animationOn">
+                        <input type="checkbox">
+                        <span class="slider round"></span>
+                    </label>
+                    <span class="off">Off</span>
+                </div>
+            </div>
+            <div id="settings-page-btns">
+                <button class="restart-game">Restart Game</button>
+                <button class="continue-game">Continue Game</button>
+            </div>
+        </article>
+
+        <article id="end-survive" class="hidden">
+            <h1>Congrats! The plant survived!</h1>
+            <p>Wow you are such a good friend! Your friend trusts you to take care of their plant. Maybe one day you will have a plant of your own.</p>
+            <button class="restart-game">Start a New Game!</button>
+        </article>
+
+        <article id="end-dead" class="hidden">
+            <h1>Uh Oh...</h1>
+            <p>Maybe go run to the store and get a new emotional support plant before your friend gets back in town...</p>
+            <button class="restart-game">Start a New Game!</button>
+        </article>
+    </section>
+    <main class="hidden">
+        <section id="plant">
+            <img id="plant-visual" src="images/plant1.png" alt="plant">
+            <div id="plant-health">
+                <div id="health-bar">
+                    <div id="bar-fill"></div>
+                    <div id="bar-outline" class="outline">OK</div>
+                </div>
+                <div id="health-overlay" class="hidden">
+                    <div id="water-stat">
+                        <div class="hint">just right!</div>
+                        <div class="stat">
+                            <img src="images/water1.png" alt="water">
+                            <span class="value">0</span>
+                        </div>
+                        
+                    </div>
+                    <div id="sun-stat">
+                        <div class="hint">just right!</div>
+                        <div class="stat">
+                            <img src="images/sun1.png" alt="sun"> 
+                            <span class="value">0</span>
+                        </div>
+                    </div>
+                    <div id="fertilizer-stat">
+                        <div class="hint">just right!</div>
+                        <div class="stat">
+                            <img src="images/fertilizer1.png" alt="fertilizer">
+                            <span class="value">0</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="game">
+            <div id="day">Day</div>
+            <div id="date">
+                <div id="date1" class="card">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+                <div id="date2" class="card">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+            </div>
+            <div id="loops">
+                <svg width="199" height="18" viewBox="0 0 199 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect x="124" width="11" height="18" rx="3" fill="#402C23"/>
+                    <rect x="188" width="11" height="18" rx="3" fill="#402C23"/>
+                    <rect width="11" height="18" rx="3" fill="#402C23"/>
+                    <rect x="64" width="11" height="18" rx="3" fill="#402C23"/>
+                </svg>
+            </div>
+            <div id="resources">
+                <div id="resource1" class="card">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+                <div id="resource2" class="card">
+                    <div class="front"></div>
+                    <div class="back"></div>
+                </div>
+            </div>
+            <div id="action-area" class="animationOn">
+                <button id="start-btn" class="hidden">Start Next Day</button>
+                <button id="pass">Rest</button>
+                <button id="roll">Feed Plant</button>
+            </div>
+        </section>
+    </main>
+    <button class="info-btn">
+        <img src="images/info-btn-light.png"  alt="more info button">
+    </button>
+    <button class="settings-btn">
+        <img src="images/settings-btn-light.png" alt="settings button">
+    </button>
+    <footer>
+        <a href="sources.html">Sources</a>
+        
+    </footer>
+</body>
+</html>
